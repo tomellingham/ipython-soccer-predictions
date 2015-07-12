@@ -32,9 +32,9 @@ gcloud compute instances create ipy-predict \
   --zone=europe-west1-b --machine-type n1-standard-1 --scopes storage-ro bigquery
 ```
 
-Ssh to your new machine:
+SSH to your new machine:
 
-`gcloud compute ssh ipy-predict --ssh_flag "-L 8888:127.0.0.1:8888"
+'gcloud compute ssh ipy-predict --ssh-flag "-L 8888:127.0.0.1:8888"'
 
 
 Download and run the docker image we prepared:
